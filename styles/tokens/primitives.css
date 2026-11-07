@@ -1,15 +1,34 @@
 :root {
+    --val-6: .375rem;
+    --val-8:  .5rem;
+    --val-10: .625rem;
+    --val-14: .875rem;
+    --val-16: 1rem;
+    --val-18: 1.125rem;
+    --val-24: 1.5rem;
+    --val-26: 1.625rem;
+    --val-28: 1.75rem;
+    --val-32: 2rem;
+    --val-40: 2.5rem;
+    --val-64: 4rem;
+    --val-72: 4.5rem;
+    --val-80: 5rem; 
+    
+    
     /* --- Spacings ---*/
-    --space-xxs: .25rem;
-    --space-xs: .5rem;
-    --space-s: .75rem;
-    --space-m: 1rem;
-    --space-l: 1.25rem;
-    --space-xl: 1.5rem;
-    --space-xxl: 1.75rem;
-    --space-xxxl: 2rem;
+    --space-xs: var(--val-8);
+    --space-s: var(--val-10);
+    --space-m: var(--val-14);
+    --space-l: var(--val-18);
+    --space-xl: var(--val-24);
+    --space-xxl: var(--val-32);
+    --space-xxxl: var(--val-40);
+    --space-max: var(--val-80);
 
-    --padding-header: 1.625rem;
+
+    /* --- Paddings ---*/
+    --padding-m: var(--val-26);
+    --padding-l: var(--val-32);
 
     /* --- Border radius ---*/
     --border-radius-s: .25rem;
@@ -17,11 +36,11 @@
     --border-radius-l: .75rem;
 
     /* --- Typography ---*/
-    --text-l: 1.75rem;
-    --text-m: .875rem; 
-    --text-h1: 4rem;  
-    --text-h2: 1.75rem;
-    --text-h3: 1.5rem;
+    --text-logo: var(--val-28);
+    --text-m: var(--val-14); 
+    --text-h1: var(--val-64);  
+    --text-h2: var(--val-28);
+    --text-h3: var(--val-24);
     --text-weight-normal: 400;
     --text-weight-semibold: 500;
     --text-weight-bold: 700;
