@@ -1,98 +1,152 @@
 .hero {
     width: 100%;
-    padding-block-end: var(--padding-m);
+    padding-block-end: var(--space-xxxl);
     border-block-end: 1px solid var(--horizontal-rule);
     
     & img {
-    display: block; 
-    height: auto; 
-    width: 100%; 
+        display: block; 
+        height: auto; 
+        width: 100%; 
     }
 }
 
-.heading-index-page {
-    padding-block-start: var(--padding-m);
-    padding-block-end: var(--padding-l);
+.h1-index-page {
+    padding-block: var(--space-xxxl);
 }
 
-/* --- Развлечения --- */
+/* --- Entertainments --- */
 .entertainments {
     display: flex;
     flex-direction: column;
     gap: var(--space-xxl);
     border-block-end: 1px solid var(--horizontal-rule);
-    padding-block-end: var(--space-max);
-    font-size: 14px;
-    font-weight: 500;
-    color: hsl(0, 0%, 8%, 1);
+    padding-block-end: var(--space-xmax);
+    font-weight: var(--text-weight-semibold);
+    color: var(--text-primary);
 }
 
-.entertainments__group {
+.entertainments-group {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, min-content);
-    column-gap: 30px;
-    row-gap: 72px;
-    list-style: none;
+    grid-template-columns: 1fr;
+    row-gap: var(--space-max);
+
+    & img {
+        display: block; 
+        height: auto; 
+        width: 100%; 
+    }
 
     & p {
-        margin: 12px 0 0 0;
+        margin-block-start: var(--space-m);
         text-transform: uppercase;
+        font-weight: var(--text-weight-semibold);
     }
 }
 
 
-/* --- Проживание на курорте --- */
-
+/* --- Accommodation --- */
+.h2-index-page {
+    padding-block-start: var(--space-xmax);
+}
 
 .stays {
-    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xxxl);
+    padding-block-end: var(--space-max);
 }
 
-.stays__group {
+.stays-group {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, min-content);
-    column-gap: 30px;
-    row-gap: 30px;
+    grid-template-columns: 1fr;
+    row-gap: var(--space-xxl);
 }
 
-.stays__group-item {
+.stays-group-item {
     display: flex;
     flex-direction: column;
 }
 
-.stays__item-large {
+.stays-item-large {
     position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     grid-row-start: 1;
     grid-row-end: span 2;
 
-    & h3 {
-        color: hsl(0, 0%, 100%, 1);
+    & img {
+        display: block; 
+        height: auto; 
+        width: 100%; 
     }
 
-    & .stays__item-large__content {
+    & h3 {
+        color: var(--text-secondary);
+    }
+
+    & .stays-item-large-content {
         position: absolute;
-        margin: 0 0 28px 34px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xl);
+        margin: 0 0 var(--space-xxl) var(--space-xxxl);
     }
 }
 
-.stays__item-regular {
+.stays-item-regular {
     justify-content: center;
-    height: 285px;
-    background-color: hsl(220, 24%, 93%, 1);
-    padding: 0 0 0 73px;
+    min-height: 15rem;
+    background-color: var(--bg-grey-light);
 
-    & .h3-fix {
-        margin-bottom: 0px;
+    & .stays-item-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-s);
+        margin-left: var(--space-xxxl);
     }
 
     & p {
-        font-weight: 400;
         line-height: var(--line-height-heading);
         max-width: 35ch;
-        color: hsl(0, 0%, 8%, 1);
-        padding-block: 0px 16px;
+        color: var(--text-primary);
+        padding-block-end: var(--space-s);
+    }
+}
+
+.stays-buttons-block {
+    display: flex;
+    gap: var(--space-m);
+}
+
+
+@media (min-width: 768px) {
+    .entertainments-group {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, min-content);
+        column-gap: var(--space-xxl);
+    }
+
+    .stays-group {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, min-content);
+        column-gap: var(--space-xxl);
+    }
+
+    .stays-item-large {
+    position: relative;
+
+        & .stays-item-large-content {
+            position: absolute;
+            gap: var(--space-xl);
+            margin: 0 0 var(--space-xxl) var(--space-xxxl);
+        }
+    }
+
+    .stays-item-regular {
+
+        & .stays-item-content {
+            margin-left: var(--space-max);
+        }
     }
 }

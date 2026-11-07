@@ -7,12 +7,11 @@
 
 }
 
-
 .row-one {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-block: var(--padding-m);
+    padding-block: var(--space-xl);
 }
 
 .header-brand {
@@ -24,8 +23,8 @@
     color: var(--brand-blue-500);
 
     & img {
-        width: 41px;
-        height: 35px;
+        width: 2.5rem;
+        height: auto;
         margin-right: var(--space-xs);
     }
 
@@ -67,7 +66,7 @@
 
 
 .row-two {
-    padding-block: var(--padding-m);
+    padding-block: var(--space-xl);
     border-block-start: 1px solid var(--horizontal-rule);
 }
 

@@ -1,23 +1,23 @@
 .footer {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-block: 56px 70px;
-    border-top: 1px solid hsl(0, 0%, 48%, 1);
+    flex-direction: column;
+    row-gap: var(--space-s);
+    padding-block: var(--space-4xl) var(--space-max);
+    border-top: 1px solid var(--horizontal-rule);
 
     & a {
         text-decoration: none;
     }
 
     & a:hover {
-        font-weight: 600;
+        font-weight: var(--text-weight-semisemibold);
         text-decoration: underline;
-        text-decoration-color: hsl(0, 0%, 26%, 1);
+        text-decoration-color: var(--brand-grey-600);
     }
 
     & small {
         font-family: 'Montserrat', Verdana, sans-serif;
-        color: hsl(0, 0%, 26%, 1);
+        color: var(--brand-grey-600);
     }
 }
 
@@ -26,4 +26,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

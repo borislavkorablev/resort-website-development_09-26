@@ -21,14 +21,11 @@
     --space-m: var(--val-14);
     --space-l: var(--val-18);
     --space-xl: var(--val-24);
-    --space-xxl: var(--val-32);
-    --space-xxxl: var(--val-40);
-    --space-max: var(--val-80);
-
-
-    /* --- Paddings ---*/
-    --padding-m: var(--val-26);
-    --padding-l: var(--val-32);
+    --space-xxl: var(--val-28);
+    --space-xxxl: var(--val-32);
+    --space-4xl: var(--val-40);
+    --space-max: var(--val-72);
+    --space-xmax: var(--val-80);
 
     /* --- Border radius ---*/
     --border-radius-s: .25rem;
@@ -43,6 +40,7 @@
     --text-h3: var(--val-24);
     --text-weight-normal: 400;
     --text-weight-semibold: 500;
+    --text-weight-semisemibold: 600;
     --text-weight-bold: 700;
     --line-height-heading: 1.28;
     --line-height-paragraph: 1.5;
