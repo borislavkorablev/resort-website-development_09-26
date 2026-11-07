@@ -1,9 +1,21 @@
+:root {
+    --page-padding-inline: 1.5rem; 
+    --max-site-width: 1188px;
+}
+
 html {
     scrollbar-gutter: stable;
 }
 
 body {
+
+    max-inline-size: var(--max-site-width);
     margin: 0 auto;
-    display: grid;
-    justify-content: center;
+    padding-inline: var(--page-padding-inline);
+    font-family: 'Roboto', Verdana, sans-serif;
+
+    min-height: 100vh; 
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

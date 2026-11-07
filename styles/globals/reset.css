@@ -1,3 +1,9 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
 body,
 h1,
 h2,
@@ -16,4 +22,16 @@ dl,
 dd {
     margin: 0;
     padding: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+address {
+    font-style: normal;
 }

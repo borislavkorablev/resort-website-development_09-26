@@ -1,8 +1,12 @@
+/* --- PRIMITIVES --- */
+@import url("./styles/tokens/primitives.css");
+@import url("./styles/tokens/colors.css");
+
+/* --- RESET --- */
 @import url("./styles/globals/reset.css");
 
 /* --- GLOBALS --- */
 @import url("./styles/globals/page.css");
-@import url("./styles/globals/box-sizing.css");
 @import url("./styles/globals/typography.css");
 
 /* --- LAYOUT --- */
@@ -11,5 +15,4 @@
 
 /* --- COMPONENTS --- */
 @import url("./styles/components/index-page.css");
-@import url("./styles/components/headings.css");
 @import url("./styles/components/buttons.css");
