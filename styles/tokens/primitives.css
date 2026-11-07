@@ -9,21 +9,22 @@
     --space-xxl: 1.75rem;
     --space-xxxl: 2rem;
 
+    --padding-header: 1.625rem;
+
     /* --- Border radius ---*/
     --border-radius-s: .25rem;
     --border-radius-m: .5rem;
     --border-radius-l: .75rem;
 
     /* --- Typography ---*/
-    --text-s: 8pt;
-    --text-m: 9pt;
-    --text-l: 10pt;
-    --text-h1: 4rem;
+    --text-l: 1.75rem;
+    --text-m: .875rem; 
+    --text-h1: 4rem;  
     --text-h2: 1.75rem;
     --text-h3: 1.5rem;
     --text-weight-normal: 400;
     --text-weight-semibold: 500;
-    --text-weight-bold: 600;
+    --text-weight-bold: 700;
     --line-height-heading: 1.28;
     --line-height-paragraph: 1.5;
 }

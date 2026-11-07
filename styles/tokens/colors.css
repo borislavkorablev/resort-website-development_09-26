@@ -23,9 +23,13 @@
 
 
     /* --- Semantic colors layout --- */
+    --horizontal-rule: var(--brand-grey-400);
 
 
     /* --- Semantic colors text --- */
     --text-primary: var(--brand-black);
+    --text-accent: var(--brand-orange);
+    --text-navigation: var(--brand-grey-400);
+    --text-navigation-hover: var(--brand-black);
 
 }
