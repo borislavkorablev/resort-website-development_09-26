@@ -1,20 +1,15 @@
-:root {
-    --page-padding-inline: 1.5rem; 
-    --max-site-width: 1188px;
-}
-
 html {
-    scrollbar-gutter: stable;
+  scrollbar-gutter: stable;
 }
 
 body {
-    max-inline-size: var(--max-site-width);
-    margin: 0 auto;
-    padding-inline: var(--page-padding-inline);
-    font-family: 'Roboto', Verdana, sans-serif;
+  max-inline-size: var(--max-site-width);
+  margin: 0 auto;
+  padding-inline: var(--page-padding-inline);
+  font-family: "Roboto", Verdana, sans-serif;
 
-    min-height: 100vh; 
+  min-height: 100vh;
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
