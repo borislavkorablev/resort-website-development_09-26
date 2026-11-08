@@ -52,6 +52,7 @@
     flex-wrap: wrap;
     column-gap: var(--space-l);
     row-gap: var(--space-xs); 
+    text-align: right;
 
     & a {
         font-weight: var(--text-weight-semibold);

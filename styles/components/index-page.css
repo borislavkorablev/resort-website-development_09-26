@@ -74,10 +74,11 @@
     justify-content: flex-end;
     grid-row-start: 1;
     grid-row-end: span 2;
+    height: 100%;
 
     & img {
         display: block; 
-        height: auto; 
+        height: 100%; 
         width: 100%; 
     }
 
@@ -131,10 +132,15 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2, min-content);
         column-gap: var(--space-xxl);
+         align-items: stretch;
     }
 
     .stays-item-large {
-    position: relative;
+        position: relative;
+
+        & img {
+            object-fit: cover;
+        }
 
         & .stays-item-large-content {
             position: absolute;
@@ -144,6 +150,7 @@
     }
 
     .stays-item-regular {
+        height: 100%;
 
         & .stays-item-content {
             margin-left: var(--space-max);
