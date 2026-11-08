@@ -1,29 +1,30 @@
 .button {
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 20px;
-    padding: 5px 13px 5px 13px;
-    color: var(--color, white);
-    border: var(--border, black);
+  font-size: var(--text-m);
+  font-weight: var(--text-weight-semibold);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--border-radius-buttons);
+  padding-block: var(--space-xxs);
+  padding-inline: var(--space-m);
+  color: var(--color, white);
+  border: var(--border, black);
 
-    display: inline-block;
-    /* block margin/padding */
+  display: inline-block;
+  /* block margin/padding */
 
-    &.primary {
-        --color: hsl(23, 50%, 80%, 1);
-        --border: 1px solid hsl(23, 68%, 45%, 1);
-        background-color: hsl(23, 68%, 45%, 1);
-    }
+  &.primary {
+    --color: var(--text-button-primary);
+    --border: 1px solid var(--border-button-primary);
+    background-color: var(--bg-button-primary);
+  }
 
-    &.secondary {
-        --color: hsl(23, 68%, 45%, 1);
-        --border: 1px solid hsl(23, 68%, 45%, 1);
-    }
+  &.secondary {
+    --color: var(--text-button-secondary);
+    --border: 1px solid var(--border-button-primary);
+  }
 
-    &.secondary-light {
-        color: hsl(23, 50%, 80%, 1);
-        border: 1px solid hsl(23, 50%, 80%, 1);
-    }
+  &.secondary-light {
+    color: var(--text-button-primary);
+    border: 1px solid var(--border-button-secondary-light);
+  }
 }

@@ -1,37 +1,41 @@
 :root {
-    /* --- Color primitives --- */
-    --base-white: hsl(0, 0%, 100%);
-    --base-black: hsl(0, 0%, 0%);
+  /* --- Color primitives --- */
+  --base-white: hsl(0, 0%, 100%);
+  --base-black: hsl(0, 0%, 0%);
 
-    --brand-black: hsl(0, 0%, 8%, 1);
-    --brand-white: hsl(0, 0%, 100%, 1);
-    
-    /* Greys */
-    --brand-grey-100: hsl(220, 24%, 93%, 1);
-    --brand-grey-400: hsl(0, 0%, 48%, 1);
-    --brand-grey-500: hsl(0, 0%, 28%, 1);
-    --brand-grey-600: hsl(0, 0%, 26%, 1);    
-    
-    /* Blues */
-    --brand-blue-300: hsl(227, 27%, 47%, 1);
-    --brand-blue-400: hsl(220, 22%, 35%, 1);
-    --brand-blue-500: hsl(223, 16%, 31%, 1);
+  --brand-black: hsl(0, 0%, 8%, 1);
+  --brand-white: hsl(0, 0%, 100%, 1);
 
-    /* Blues */
-    --brand-orange: hsl(23, 68%, 45%, 1);
-    --brand-orange-light: hsl(23, 50%, 80%, 1);
+  /* Greys */
+  --brand-grey-100: hsl(220, 24%, 93%, 1);
+  --brand-grey-400: hsl(0, 0%, 48%, 1);
+  --brand-grey-500: hsl(0, 0%, 28%, 1);
+  --brand-grey-600: hsl(0, 0%, 26%, 1);
 
+  /* Blues */
+  --brand-blue-300: hsl(227, 27%, 47%, 1);
+  --brand-blue-400: hsl(220, 22%, 35%, 1);
+  --brand-blue-500: hsl(223, 16%, 31%, 1);
 
-    /* --- Semantic colors layout --- */
-    --horizontal-rule: var(--brand-grey-400);
-    --bg-grey-light:var(--brand-grey-100);
+  /* Oranges */
+  --brand-orange: hsl(23, 68%, 45%, 1);
+  --brand-orange-light: hsl(23, 50%, 80%, 1);
 
+  /* --- Semantic colors layout --- */
+  --horizontal-rule: var(--brand-grey-400);
+  --bg-stays-item-regular: var(--brand-grey-100);
+  --bg-button-primary: var(--brand-orange);
 
-    /* --- Semantic colors text --- */
-    --text-primary: var(--brand-black);
-    --text-secondary: var(--brand-white);
-    --text-accent: var(--brand-orange);
-    --text-navigation: var(--brand-grey-400);
-    --text-navigation-hover: var(--brand-black);
+  /* --- Semantic colors border --- */
+  --border-button-primary: var(--brand-orange);
+  --border-button-secondary-light: var(--brand-orange-light);
 
+  /* --- Semantic colors text --- */
+  --text-primary: var(--brand-black);
+  --text-secondary: var(--brand-white);
+  --text-accent: var(--brand-orange);
+  --text-navigation: var(--brand-grey-400);
+  --text-navigation-hover: var(--brand-black);
+  --text-button-primary: var(--brand-orange-light);
+  --text-button-secondary: var(--brand-orange);
 }
